@@ -484,7 +484,7 @@ describe('GET /api/books', () => {
 **Backend (.env):**
 ```
 PORT=5000
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/bookstore
+const mongoDBURL = process.env.MONGODB_URL;
 JWT_SECRET=your_super_secret_key_here
 NODE_ENV=production
 ```
